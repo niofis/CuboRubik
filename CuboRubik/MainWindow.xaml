@@ -1,0 +1,25 @@
+﻿<Window x:Class="CuboRubik.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CuboRubik"
+    xmlns:interactive3D="clr-namespace:_3DTools;assembly=3DTools"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="800" Width="600">
+    <Grid>
+        <interactive3D:TrackballDecorator Name="V3DTrackball">
+            <Viewport3D Name="V3DCubo" />
+        </interactive3D:TrackballDecorator>
+        <Grid Margin="4,4,0,0" Name="grid1" HorizontalAlignment="Left" Width="157" Height="222" VerticalAlignment="Top">
+            <TextBlock Name="lblMensaje" TextWrapping="Wrap" HorizontalAlignment="Left" Width="157" Margin="0,180,0,0" Height="42" VerticalAlignment="Top">
+            </TextBlock>
+            <Button Background="SteelBlue" BorderThickness="5" Focusable="False" Name="btnAbrir" Height="19" Margin="10,40,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="136" Click="btnAbrir_Click">Abrir</Button>
+            <Button Height="19" Name="btnNuevo" Focusable="False" Background="SteelBlue" BorderThickness="5" Margin="10,14,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="136" Click="btnNuevo_Click">Nuevo</Button>
+            <Button Background="SeaGreen" BorderThickness="5" Focusable="False" Height="19" Margin="10,92,0,0" Name="btnRevolver" VerticalAlignment="Top" IsEnabled="True" HorizontalAlignment="Left" Width="136" Click="btnRevolver_Click">Revolver</Button>
+            <Button Background="SeaGreen" BorderThickness="5" Focusable="False" Margin="10,117.55,0,0" Name="btnSolucionar" Height="19.45" VerticalAlignment="Top" HorizontalAlignment="Left" Width="136" Click="btnSolucionar_Click">Solucionar</Button>
+            <Button Background="SteelBlue" BorderThickness="5" Focusable="False" Name="btnGuardar" Height="19" Margin="10,66,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="136" Click="btnGuardar_Click">Guardar</Button>
+            <CheckBox Margin="11,144,0,0" Name="chkFlechas" Height="18" VerticalAlignment="Top" HorizontalAlignment="Left" Width="132" IsChecked="True" Checked="chkFlechas_Checked" Unchecked="chkFlechas_Checked">Mostrar Flechas</CheckBox>
+        </Grid>
+    </Grid>
+</Window>
