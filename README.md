@@ -1,7 +1,7 @@
 CuboRubik
 =======
 
-Rubik cube game build on WPF, uses 3D Tools for the Windows Presentation Foundation fromMicrosoft.
+Rubik cube game build on WPF, uses 3D Tools for the Windows Presentation Foundation from Microsoft.
 
 ###Build
 
